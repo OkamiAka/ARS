@@ -1,0 +1,106 @@
+body
+{
+	background-color: #292929;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	color: white;
+    cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/Pointers/Hack_Normal_Select_v2.cur"), default !important;
+}
+a,button{
+    cursor: url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/Pointers/Hack_Link_Select_v2.cur"), default !important;
+}
+div{
+	background-color: rgba(230,230,230,0.2);
+}
+#tr{
+	background-color: transparent;
+	text-align-last: center;
+	text-align: center;
+}
+#but {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: white;
+  background-color: #4c4c4c;
+  border-radius: 15px;
+}
+a{
+	color:#64981d;
+}
+#a_colorb{
+	color: blue;
+}#a_colorb:hover
+{
+	background-color: #000000;
+	color:#71ac20;
+}
+a:hover,#but:hover,h1
+{
+	background-color: #000000;
+	color:#71ac20;
+}
+#but:active {
+  background: red;
+  color: white;
+}
+table,td{
+	border-style: solid;
+	border-width: 1;
+	background-color: #3f3d3d;
+}
+#stock{	
+	height: auto;
+	width: auto;
+	border-style: solid;
+	border-width: 1;
+	border-radius: 40px;
+}
+#retard{
+	height: auto;
+	width: auto;
+	border-style: solid;
+	border-width: 1;
+	border-radius: 40px;
+}
+#emprunter{
+	height: auto;
+	width: auto;
+	border-style: solid;
+	border-width: 1;
+	border-radius: 40px;
+}
+#reserver{
+	height: auto;
+	width: auto;
+	border-style: solid;
+	border-width: 1;
+	border-radius: 40px;
+}
+#barcode{
+	max-width: 62mm;
+}
+#divL
+{
+	background-color: transparent;
+	float: left;
+	height: auto;
+	width: 49%;
+}
+#divR
+{
+	background-color: transparent;
+	float: right;
+	height: auto;
+	width: 49%;
+}
+#stat{
+	color: #ffffff;
+}
+select{
+	overflow-y: hidden; 
+}

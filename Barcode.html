@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <title>BytescoutBarcode128</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="bytescoutbarcode128_1.00.07.js"></script>  
+  </head>
+  <body onload="updateBarcode()">
+    <form action="">
+      (C)&oacute;digo de Barras:
+      <input id="barcodeValue" type="text" name="value" value="abcd123456" />
+      <input type="button" value="Gerar" onclick="updateBarcode()" />
+    </form>
+    <p>
+      (C)&oacute;digo de Barras convertido para imagem:<Br />
+      <img id="barcodeImage" style="border: solid 1px black;"/>
+    </p>
+    <script type="text/javascript">
+      function updateBarcode() {
+  var barcode = new bytescoutbarcode128();
+        var value = document.getElementById("barcodeValue").value;
+        barcode.valueSet(value);
+        barcode.setMargins(5, 5, 5, 5);
+        barcode.setBarWidth(2);
+        var width = barcode.getMinWidth();
+        barcode.setSize(width, 100);
+        var barcodeImage = document.getElementById('barcodeImage');
+    barcodeImage.src = barcode.exportToBase64(width, 100, 0);
+      }
+ 
+      function saveBarcode() {
+        document.frmSaveBarcode.barcodeBase64.value=document.getElementById('barcodeImage').src;
+        document.frmSaveBarcode.submit();
+      }
+    </script>
+    <form name="frmSaveBarcode" action="barcode.php" method="post">
+      <input id="barcodeBase64" name="barcodeBase64" type="hidden" value="1231" />
+      <input type="button" value="Salvar" onclick="saveBarcode()" />
+    </form>    
+  </body>
+</HTML>

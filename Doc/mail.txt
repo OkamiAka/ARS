@@ -1,0 +1,5 @@
+
+Suite a votre prêt effectuer récemment, nous vous informons que vous êtes sur le point de dépasser le délai autoriser.
+<br/><!-- le <br/> permet de revenir a la ligne -->
+<br/>
+Bien cordialement,
